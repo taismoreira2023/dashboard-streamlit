@@ -160,6 +160,8 @@ with tab2:
         agrupado,
         x='Versão APP',
         y='count',
+        width=1400,
+        height= 400,
         color='category',
         barmode='group',
         color_discrete_map={
