@@ -158,7 +158,7 @@ with tab2:
         agrupado,
         x='Versão APP',
         y='count',
-        width=1400,
+        width=1000,
         height= 400,
         color='category',
         barmode='group',
