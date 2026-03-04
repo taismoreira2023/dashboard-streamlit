@@ -73,14 +73,12 @@ with tab2:
         default=df['Versão APP'].unique()
     )
 
-    df_filtrado = df[df['Versão APP'].isin(versoes)]
-
     # KPIs
     st.markdown("## Visão Geral")
 
-    total_comentarios = len(df_filtrado)
-    nota_media = round(df_filtrado['Nota'].mean(), 2)
-    percentual_ruim = round((df_filtrado['category'] == 'Ruim').mean() * 100, 1)
+    total_comentarios = len(df)
+    nota_media = round(df['Nota'].mean(), 2)
+    percentual_ruim = round((df['category'] == 'Ruim').mean() * 100, 1)
 
     k1, k2, k3 = st.columns(3)
 
@@ -131,17 +129,17 @@ with tab2:
 
 
     with col1:
-        pie_tema(df_filtrado,
+        pie_tema(df,
                  "pix|dinheiro|transferencia|emprestimo",
                  "Pix e Transações")
 
     with col2:
-        pie_tema(df_filtrado,
+        pie_tema(df,
                  "atendimento|contato|suporte|ligar",
                  "Atendimento")
 
     with col3:
-        pie_tema(df_filtrado,
+        pie_tema(df,
                  "erro|trava|problema|cadastro",
                  "Falhas Operacionais")
 
@@ -182,7 +180,7 @@ with tab2:
     # TOP PALAVRAS
     st.markdown("## Top 20 Palavras Mais Frequentes")
 
-    frequency_graph_plotly(df_filtrado, 'stopWordsUnidecode', 20)
+    frequency_graph_plotly(df, 'stopWordsUnidecode', 20)
 with tab3:
     st.markdown("""
         # Tomada de Decisão 
