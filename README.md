@@ -21,7 +21,7 @@ python3 --version
 
 ---
 
-## 🐧 Linux 
+## Linux 
 
 O projeto possui o script:
 
@@ -29,7 +29,7 @@ O projeto possui o script:
 venv.sh
 ```
 
-### ▶️ Para criar e ativar o ambiente virtual:
+### Para criar e ativar o ambiente virtual:
 
 ```bash
 bash venv.sh
@@ -43,7 +43,7 @@ O script irá:
 
 ---
 
-## 🪟 Windows (PowerShell)
+## Windows (PowerShell)
 
 O projeto possui o script:
 
@@ -51,7 +51,7 @@ O projeto possui o script:
 venv.ps1
 ```
 
-### ▶️ Para criar e ativar o ambiente virtual:
+### Para criar e ativar o ambiente virtual:
 
 ```powershell
 .\venv.ps1
@@ -71,7 +71,7 @@ O script irá:
 
 ---
 
-# 🚀 Executando o Dashboard
+# Executando o Dashboard
 
 Após rodar o script do seu sistema operacional, execute:
 
@@ -89,7 +89,7 @@ Abra esse endereço no navegador para visualizar o dashboard.
 
 ---
 
-# 🛑 Para desativar o ambiente
+# Para desativar o ambiente
 
 ```bash
 deactivate
